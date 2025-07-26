@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prarthnw | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f9fc;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2d6cdf, #4e9ce3);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 4px solid #1d4ed8;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: #2d6cdf;
+      margin-bottom: 1rem;
+      border-left: 6px solid #4e9ce3;
+      padding-left: 10px;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .about p,
+    .skills ul,
+    .project p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+    }
+
+    .skills li {
+      background: #2d6cdf;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.95rem;
+    }
+
+    .projects .project {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .project h3 {
+      color: #1d4ed8;
+      margin-bottom: 0.5rem;
+    }
+
+    .project a {
+      color: #4e9ce3;
+      text-decoration: none;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .images img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .contact a {
+      color: #2d6cdf;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .resume {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .resume a {
+      background: #1d4ed8;
+      color: white;
+      padding: 0.6rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      background: #2d6cdf;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .about p {
+        font-size: 1rem;
+      }
+
+      .skills li {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Prarthna</h1>
+    <p>Computer Science Engineer</p>
+  </header>
+
+  <div class="container">
+    <section class="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I am a passionate and self-driven Computer Science Engineering student with a strong interest in data analytics, mobile app development, and web technologies. My academic journey and personal projects reflect a commitment to continuous learning, creativity, and problem-solving. Currently exploring mobile app development using Dart & Flutter, I also enjoy working on full-stack web apps and data dashboards that provide insights and impact.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2 class="section-title">Skills & Tools</h2>
+      <ul>
+        <li>Python</li>
+        <li>Pandas</li>
+        <li>Matplotlib</li>
+        <li>Seaborn</li>
+        <li>SQL / PL-SQL</li>
+        <li>Java</li>
+        <li>Java FX</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>C</li>
+        <li>Power BI</li>
+        <li>Tableau</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project">
+        <h3>Railway Reservation System (C, Terminal-based)</h3>
+        <p>
+           Designed a ticket booking system that displays available trains, generates tickets in HTML with real-time PNR, manages wallet balances, and calculates confirmation probability for RAC/waitlist passengers. Integrated password recovery with security questions. Learned file handling and real-time data generation
+        </p>
+        <p><a href="#">View Code (Coming soon)</a></p>
+      </div>
+
+      <div class="project">
+        <h3>Task and Habit Manager (Java, JavaFX)</h3>
+        <p>
+           Developed a task manager with personal/professional task categorization, collaboration via a 7-digit pin, and habit tracking with streak graphs. Added a community feedback system and motivational quotes. Gained basic experience in UI/UX design, JavaFX, and data persistence.
+        </p>
+        <p><a href="#">Live Demo / GitHub</a></p>
+      </div>
+
+    <section class="gallery">
+      <h2 class="section-title">Data Analytics Dashboards</h2>
+      <div class="images">
+        <img src="bi1.jpg" alt="Grocery Store Dashboard">
+        <img src="tab1.jpg" alt="HR Analytics Dashboard">
+      </div>
+    </section>
+
+    <section class="resume">
+      <a href="your-resume-link.pdf" download>Download Resume</a>
+    </section>
+
+    <section class="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Email: <a href="prarthna2310607@ssn.edu.in">prarthna2310607@ssn.edu.in</a></p>
+      <p>GitHub: <a href="https://github.com/Prarthna-M" target="_blank">github.com/Prarthna-M</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/prarthna-m-212511305" target="_blank">linkedin.com/in/prarthna-m</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>This portfolio is a work in progress. Stay tuned for updates!</p>
+  </footer>
+</body>
+</html>
